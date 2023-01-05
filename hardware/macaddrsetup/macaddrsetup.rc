@@ -1,0 +1,15 @@
+on post-fs-data
+    mkdir /data/vendor/wifi 0770 wifi wifi
+
+# OSS WLAN and BT MAC setup
+service vendor.macaddrsetup /vendor/bin/macaddrsetup "/sys/devices/soc/soc:bcmdhd_wlan/macaddr"
+    class core
+    user system
+    group system bluetooth wifi
+    capabilities NET_ADMIN NET_RAW
+    disabled
+    oneshot
+
+on property:vold.post_fs_data_done=1
+    # Generate Bluetooth MAC address file only when /data is ready
+    start vendor.macaddrsetup

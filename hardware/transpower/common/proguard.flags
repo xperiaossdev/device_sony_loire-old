@@ -1,0 +1,13 @@
+-verbose
+-keep class androidx.localbroadcastmanager.content.LocalBroadcastManager {
+      *;
+}
+-keep class com.sony.transmitpower.BootCompletedReceiver {
+      *;
+}
+-keep class com.sony.transmitpower.service.TransmitPowerService {
+      *;
+}
+-keep class com.sony.transmitpower.service.InCallObserverService {
+      *;
+}

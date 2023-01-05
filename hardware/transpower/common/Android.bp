@@ -1,0 +1,40 @@
+// Licensed under the LICENSE.
+// Copyright 2017, Sony Mobile Communications Inc.
+
+java_library {
+    name: "TransPowerCommon",
+
+    platform_apis: true,
+    system_ext_specific: true,
+
+    srcs: ["src/**/*.java"],
+
+    static_libs: [
+        "androidx.annotation_annotation",
+        "androidx.localbroadcastmanager_localbroadcastmanager",
+        "transpower_libpower",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
+
+android_library {
+    name: "TransPowerCommon_res",
+
+    platform_apis: true,
+    system_ext_specific: true,
+
+    resource_dirs: ["res"],
+
+    static_libs: ["TransPowerCommon"],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-transmitpower",
+    src: "privapp-permissions-transmitpower.xml",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    filename_from_src: true,
+}
