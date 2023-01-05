@@ -48,7 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Chipset
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
-    ro.soc.model=MSM8952
+    ro.soc.model=msm8956
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -78,7 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
     debug.sf.enable_gl_backpressure=1 \
-    ro.hardware.vulkan=msm8952 \
+    ro.hardware.vulkan=msm8956 \
     ro.opengles.version=196610 \
     ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0 \
     persist.hwc2.skip_client_color_transform=false \

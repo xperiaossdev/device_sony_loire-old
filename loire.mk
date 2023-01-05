@@ -294,7 +294,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     Stk
 
-# Rootdir
+# RootDir
 PRODUCT_PACKAGES += \
     fstab.qcom
 
@@ -344,7 +344,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # SEPolicy
-include device/sony/sepolicy/sepolicy.mk
+include device/sony/sepolicy-loire/sepolicy.mk
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -361,10 +361,6 @@ PRODUCT_PACKAGES += \
 # Touch HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.loire
-
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Usb HAL
 PRODUCT_PACKAGES += \
@@ -401,4 +397,4 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Vendor
-$(call inherit-product, vendor/sony/loire-common/loire-common-vendor.mk)
+$(call inherit-product, vendor/sony/loire/common/loire-vendor.mk)

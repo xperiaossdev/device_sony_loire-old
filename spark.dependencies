@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "device_sony_sepolicy-loire",
+    "repository": "sony_sepolicy-loire",
+    "target_path": "device/sony/sepolicy-loire"
+  },
+  {
+    "repository": "android_kernel_sony_loire",
+    "repository": "kernel_sony_loire",
+    "target_path": "kernel/sony/loire"
+  }
+]

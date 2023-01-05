@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter suzu,$(TARGET_DEVICE)),)
+ifneq ($(filter kugo suzu,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 include $(CLEAR_VARS)
 endif

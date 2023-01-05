@@ -24,13 +24,13 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # SOC Platform
 PRODUCT_PLATFORM := loire
-TARGET_BOARD_PLATFORM := msm8952
+TARGET_BOARD_PLATFORM := msm8956
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno510
 TARGET_BOARD_AUTO := true
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := msm8952
+TARGET_BOOTLOADER_BOARD_NAME := msm8956
 
 # Architecture
 TARGET_ARCH := arm64
@@ -81,7 +81,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Display
 USE_DEVICE_SPECIFIC_DISPLAY := true
-DEVICE_SPECIFIC_DISPLAY_PATH := $(COMMON_PATH)/hardware/qcom/display/msm8998
+DEVICE_SPECIFIC_DISPLAY_PATH := $(COMMON_PATH)/hardware/qcom/display/msm8956
 BOARD_USES_ADRENO := true
 TARGET_USES_ION := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
@@ -108,7 +108,7 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_CLANG_COMPILE := false
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-6.4.1/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
-TARGET_KERNEL_SOURCE := kernel/sony/msm8956
+TARGET_KERNEL_SOURCE := kernel/sony/loire
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x3F ehci-hcd.park=3 coherent_pool=8M user_debug=31 androidboot.bootdevice=7824900.sdhci androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x20000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -118,7 +118,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $
 
 # Media
 USE_DEVICE_SPECIFIC_MEDIA := true
-DEVICE_SPECIFIC_MEDIA_PATH := $(COMMON_PATH)/hardware/qcom/media/msm8998
+DEVICE_SPECIFIC_MEDIA_PATH := $(COMMON_PATH)/hardware/qcom/media/msm8956
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
