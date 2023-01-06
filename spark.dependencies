@@ -8,5 +8,10 @@
     "repository": "android_kernel_sony_loire",
     "repository": "kernel_sony_loire",
     "target_path": "kernel/sony/loire"
+  },
+    {
+    "repository": "android_vendor_sony_loire",
+    "repository": "vendor_sony_loire",
+    "target_path": "vendor/sony/loire"
   }
 ]
